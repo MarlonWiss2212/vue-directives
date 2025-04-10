@@ -1,6 +1,6 @@
 {
-  "name": "vue-directives",
-  "version": "1.0.0",
+  "name": "@marlonwiss/vue-directives",
+  "version": "0.1.0",
   "description": "This package contains some additional vue directives such as v-focus or v-switch",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
@@ -15,21 +15,25 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonWiss2212/vue-directives.git"
+  },
   "files": [
     "dist/**/*"
   ],
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "scripts": {
     "build": "unbuild"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0"
   },
   "dependencies": {
-    "unbuild": "^3.5.0",
     "vue": "^3.5.13"
   }
 }
