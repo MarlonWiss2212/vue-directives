@@ -10,4 +10,5 @@ export default defineBuildConfig({
   clean: true,
   sourcemap: false,
   declaration: true,
+  failOnWarn: false,
 })

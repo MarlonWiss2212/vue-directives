@@ -1,4 +1,4 @@
-import { App } from 'vue'
+import type { App } from "vue";
 import { vFocus } from './focus'
 
 export function installDirectives(app: App) {
