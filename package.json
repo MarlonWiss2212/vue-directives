@@ -1,6 +1,6 @@
 {
   "name": "@marlonwiss/vue-directives",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "This package contains some additional vue directives such as v-focus or v-switch",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
