@@ -1,79 +1,43 @@
-import type { Directive } from 'vue';
+import type { Directive, DirectiveBinding } from 'vue';
 
-const switchContext = new WeakMap()
+function switchLogic(parent: HTMLElement, binding: DirectiveBinding) {
+  const children: HTMLElement[] = Array.from(parent.children) as HTMLElement[]
+  let foundMatching = false
 
-function getParentAndSwitchValue(el: HTMLElement) {
-  const parent = el.parentNode
-  if(!parent) {
-    el.style.display = 'none'
-    return
-  }
-  const switchValue = switchContext.get(parent)
+  for (const child of children) {
+    if (foundMatching) {
+      return
+    }
 
-  return {
-    parent,
-    switchValue
+    const attribute = child.getAttribute('v-case')
+    if (!attribute) {
+      child.style.display = 'none'
+    } else if (attribute === String(binding.value)) {
+      child.style.display = '';
+      foundMatching = true
+      return
+    } else {
+      child.style.display = 'none'
+      return
+    }
+
+    const defaultElement = child.getAttribute('v-default');
+
+    if (defaultElement) {
+      child.style.display = '';
+    }
   }
 }
 
 export const vSwitch: Directive<HTMLElement> = {
   beforeMount(el, binding) {
-    switchContext.set(el, binding.value)
+    switchLogic(el, binding)
   },
   updated(el, binding) {
-    switchContext.set(el, binding.value)
+    switchLogic(el, binding)
   }
 }
 
-export const vCase: Directive<HTMLElement> = {
-  beforeMount(el, binding) {
-    const data = getParentAndSwitchValue(el)
-    if(!data) return
+export const vCase: Directive<HTMLElement> = {}
 
-    if (binding.value !== data.switchValue) {
-      el.style.display = 'none'
-    }
-  },
-  updated(el, binding) {
-    const data = getParentAndSwitchValue(el)
-    if(!data) return
-
-    if (binding.value === data.switchValue) {
-      el.style.display = ''
-    } else {
-      el.style.display = 'none'
-    }
-  }
-}
-
-export const vDefault: Directive<HTMLElement> = {
-  beforeMount(el) {
-    const data = getParentAndSwitchValue(el)
-    if(!data) return
-
-    // Check if any sibling case matched
-    const hasMatch = Array.from(data.parent.children).some(child => {
-      const caseValue = child.getAttribute('v-case');
-      return caseValue === String(data.switchValue); // Ensure it's comparing the values correctly
-    });
-
-    if (hasMatch) {
-      el.style.display = 'none';
-    }
-  },
-  updated(el) {
-    const data = getParentAndSwitchValue(el)
-    if(!data) return
-
-    const hasMatch = Array.from(data.parent.children).some(child => {
-      const caseValue = child.getAttribute('v-case');
-      return caseValue === String(data.switchValue); // Ensure it's comparing the values correctly
-    });
-
-    if (!hasMatch) {
-      el.style.display = ''
-    } else {
-      el.style.display = 'none'
-    }
-  }
-}
+export const vDefault: Directive<HTMLElement> = {}

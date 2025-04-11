@@ -1,6 +1,6 @@
 {
   "name": "@marlonwiss/vue-directives",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "This package contains some additional vue directives such as v-focus or v-switch",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
@@ -26,7 +26,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "publish": "npm i && npm run build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
