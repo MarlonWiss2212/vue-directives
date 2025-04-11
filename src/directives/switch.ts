@@ -26,7 +26,7 @@ export const vSwitch: Directive<HTMLElement> = {
 }
 
 export const vCase: Directive<HTMLElement> = {
-  mounted(el, binding) {
+  beforeMount(el, binding) {
     const data = getParentAndSwitchValue(el)
     if(!data) return
 
@@ -47,18 +47,18 @@ export const vCase: Directive<HTMLElement> = {
 }
 
 export const vDefault: Directive<HTMLElement> = {
-  mounted(el) {
+  beforeMount(el) {
     const data = getParentAndSwitchValue(el)
     if(!data) return
 
     // Check if any sibling case matched
     const hasMatch = Array.from(data.parent.children).some(child => {
-      const caseValue = child.getAttribute('v-case')
-      return caseValue == data.switchValue
-    })
+      const caseValue = child.getAttribute('v-case');
+      return caseValue === String(data.switchValue); // Ensure it's comparing the values correctly
+    });
 
     if (hasMatch) {
-      el.style.display = 'none'
+      el.style.display = 'none';
     }
   },
   updated(el) {
@@ -66,9 +66,9 @@ export const vDefault: Directive<HTMLElement> = {
     if(!data) return
 
     const hasMatch = Array.from(data.parent.children).some(child => {
-      const caseValue = child.getAttribute('v-case')
-      return caseValue == data.switchValue
-    })
+      const caseValue = child.getAttribute('v-case');
+      return caseValue === String(data.switchValue); // Ensure it's comparing the values correctly
+    });
 
     if (!hasMatch) {
       el.style.display = ''
