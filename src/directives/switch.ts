@@ -1,52 +1,51 @@
 import type { Directive, DirectiveBinding } from 'vue';
 
-const switchContext = new WeakMap<ParentNode, DirectiveBinding & { found: boolean }>()
+type SwitchState = {
+  value: any
+  found: boolean
+}
+
+const switchContext = new WeakMap<Element, SwitchState>()
 
 function getParentAndSwitchValue(el: HTMLElement) {
-  const parent = el.parentNode
-  if(!parent) {
+  const parent = el.parentElement
+  if (!parent) {
     el.style.display = 'none'
     return
   }
   const switchValue = switchContext.get(parent)
-
-  return {
-    parent,
-    switchValue
-  }
+  return { parent, switchValue }
 }
 
 export const vSwitch: Directive<HTMLElement> = {
   created(el, binding) {
-    switchContext.set(el, { ...binding.value, found: false })
+    switchContext.set(el, { value: binding.value, found: false })
   },
   updated(el, binding) {
-    const switchValue = switchContext.get(el)
-    switchContext.set(el, { ...switchValue, ...binding.value})
+    const prev = switchContext.get(el) ?? { found: false }
+    switchContext.set(el, { value: binding.value, found: prev.found })
   }
 }
 
 export const vCase: Directive<HTMLElement> = {
-  beforeMount(el, binding) {
+  mounted(el, binding) {
     const data = getParentAndSwitchValue(el)
-    if(!data) return
+    if (!data || !data.switchValue) return
 
-    if (binding.value !== data.switchValue) {
-      el.style.display = 'none'
-    }
-
-    if (data.switchValue && binding.value === data.switchValue && el.parentNode) {
+    if (binding.value === data.switchValue.value) {
       el.style.display = ''
-      switchContext.set(el.parentNode, { ...data.switchValue, found: true })
+      data.switchValue.found = true
+    } else {
+      el.style.display = 'none'
     }
   },
   updated(el, binding) {
     const data = getParentAndSwitchValue(el)
-    if(!data) return
+    if (!data || !data.switchValue) return
 
-    if (data.switchValue && binding.value === data.switchValue && el.parentNode) {
+    if (binding.value === data.switchValue.value) {
       el.style.display = ''
-      switchContext.set(el.parentNode, { ...data.switchValue, found: true })
+      data.switchValue.found = true
     } else {
       el.style.display = 'none'
     }
@@ -54,20 +53,16 @@ export const vCase: Directive<HTMLElement> = {
 }
 
 export const vDefault: Directive<HTMLElement> = {
-  beforeMount(el) {
+  mounted(el) {
     const data = getParentAndSwitchValue(el)
-    if(!data) return
+    if (!data || !data.switchValue) return
 
-    if (data.switchValue) {
-      el.style.display = data.switchValue.found ? 'none' : ''
-    }
+    el.style.display = data.switchValue.found ? 'none' : ''
   },
   updated(el) {
     const data = getParentAndSwitchValue(el)
-    if(!data) return
+    if (!data || !data.switchValue) return
 
-    if (data.switchValue) {
-      el.style.display = data.switchValue.found ? 'none' : ''
-    }
+    el.style.display = data.switchValue.found ? 'none' : ''
   }
 }
