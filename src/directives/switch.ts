@@ -28,7 +28,7 @@ export const vSwitch: Directive<HTMLElement> = {
 }
 
 export const vCase: Directive<HTMLElement> = {
-  mounted(el, binding) {
+  beforeMount(el, binding) {
     const data = getParentAndSwitchValue(el)
     if (!data || !data.switchValue) return
 
@@ -53,7 +53,7 @@ export const vCase: Directive<HTMLElement> = {
 }
 
 export const vDefault: Directive<HTMLElement> = {
-  mounted(el) {
+  beforeMount(el) {
     const data = getParentAndSwitchValue(el)
     if (!data || !data.switchValue) return
 

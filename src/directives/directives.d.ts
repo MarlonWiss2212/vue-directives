@@ -1,7 +1,7 @@
 import { vFocus } from "./focus";
 import { vCase, vDefault, vSwitch } from "./switch";
 
-declare module 'vue' {
+declare module '@vue/runtime-core' {
   interface GlobalDirectives {
     vFocus: typeof vFocus;
     vSwitch: typeof vSwitch
