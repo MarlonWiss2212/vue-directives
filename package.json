@@ -1,19 +1,23 @@
 {
   "name": "@marlonwiss/vue-directives",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "This package contains some additional vue directives such as v-focus or v-switch",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
   "type": "module",
   "repository": {
     "type": "git",
@@ -27,8 +31,7 @@
   },
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare",
-    "build": "unbuild"
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^1.0.1",
@@ -36,8 +39,7 @@
     "@nuxt/test-utils": "^3.17.2",
     "@types/node": "^22.14.0",
     "nuxt": "^3.16.2",
-    "typescript": "^5.8.3",
-    "unbuild": "^3.5.0"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "vue": "^3.5.13"
