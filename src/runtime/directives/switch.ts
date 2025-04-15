@@ -24,9 +24,6 @@ export const vSwitch: Directive<HTMLElement> = {
   updated(el, binding) {
     const prev = switchContext.get(el) ?? { found: false }
     switchContext.set(el, { value: binding.value, found: prev.found })
-  },
-  getSSRProps (binding, vnode) {
-    return {}
   }
 }
 
@@ -52,9 +49,6 @@ export const vCase: Directive<HTMLElement> = {
     } else {
       el.style.display = 'none'
     }
-  },
-  getSSRProps (binding, vnode) {
-    return {}
   }
 }
 
@@ -70,8 +64,5 @@ export const vDefault: Directive<HTMLElement> = {
     if (!data || !data.switchValue) return
 
     el.style.display = data.switchValue.found ? 'none' : ''
-  },
-  getSSRProps (binding, vnode) {
-    return {}
   }
 }

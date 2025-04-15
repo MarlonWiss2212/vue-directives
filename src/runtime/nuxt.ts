@@ -1,6 +1,10 @@
 import { defineNuxtPlugin } from '#app'
-import { installDirectives } from "./utils/install-directives";
+import { vFocus } from "./directives/focus";
+import { vCase, vDefault, vSwitch } from "./directives/switch";
 
 defineNuxtPlugin((nuxtApp) => {
-  installDirectives(nuxtApp.vueApp);
+  nuxtApp.vueApp.directive('focus', vFocus)
+  nuxtApp.vueApp.directive('switch', vSwitch)
+  nuxtApp.vueApp.directive('case', vCase)
+  nuxtApp.vueApp.directive('default', vDefault)
 })
