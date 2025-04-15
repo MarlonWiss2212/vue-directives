@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from '#app'
-import { installDirectives } from "~/src/utils/install-directives";
+import { installDirectives } from "./utils/install-directives";
 
 defineNuxtPlugin((nuxtApp) => {
   installDirectives(nuxtApp.vueApp);

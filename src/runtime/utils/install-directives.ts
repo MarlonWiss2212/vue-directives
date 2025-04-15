@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import { vFocus, vCase, vDefault, vSwitch } from "~/src";
+import { vFocus, vCase, vDefault, vSwitch } from "./../directives/main";
 
 export function installDirectives(app: App) {
   app.directive('focus', vFocus)
