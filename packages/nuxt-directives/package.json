@@ -1,0 +1,48 @@
+{
+  "name": "@marlonwiss/nuxt-directives",
+  "version": "0.1.0",
+  "description": "This package contains some additional vue directives such as v-focus or v-switch for Nuxt3",
+  "author": "Marlon Wisskirchen",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonWiss2212/vue-directives.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "nuxt-module-build build",
+    "prepare": "nuxt-module-build build --stub && nuxt-module-build prepare"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^1.0.1",
+    "@nuxt/schema": "^3.16.2",
+    "@nuxt/test-utils": "^3.17.2",
+    "@types/node": "^22.14.0",
+    "nuxt": "^3.16.2",
+    "typescript": "^5.8.3",
+    "@marlonwiss/vue-directives": "workspace:*"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.16.2"
+  }
+}
