@@ -2,8 +2,8 @@ import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
 export default defineNuxtModule({
   meta: {
-    name: 'marlonwiss-vue-directives',
-    configKey: 'marlonwissVueDirectives',
+    name: 'marlonwiss-nuxt-directives',
+    configKey: 'marlonwissNuxtDirectives',
   },
   defaults: {},
   setup() {
