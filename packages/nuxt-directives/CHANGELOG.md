@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.5
+
+### Patch Changes
+
+- c88c331: fix
+
 ## 0.2.4
 
 ### Patch Changes
