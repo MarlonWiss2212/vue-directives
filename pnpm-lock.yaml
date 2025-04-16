@@ -17,13 +17,13 @@ importers:
 
   packages/nuxt-directives:
     dependencies:
-      '@marlonwiss/vue-directives':
-        specifier: workspace:*
-        version: link:../vue-directives
       '@nuxt/kit':
         specifier: ^3.16.2
         version: 3.16.2(magicast@0.3.5)
     devDependencies:
+      '@marlonwiss/vue-directives':
+        specifier: workspace:*
+        version: link:../vue-directives
       '@nuxt/module-builder':
         specifier: ^1.0.1
         version: 1.0.1(@nuxt/cli@3.24.1(magicast@0.3.5))(esbuild@0.25.2)(typescript@5.8.3)(vue@3.5.13(typescript@5.8.3))
