@@ -6,7 +6,7 @@
       "persistent": true,
       "cache": false
     },
-    "prepare": {
+    "dev:prepare": {
       "persistent": true,
       "cache": false
     }
