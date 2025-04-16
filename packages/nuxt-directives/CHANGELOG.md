@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.12
+
+### Patch Changes
+
+- dc38b18: Fix Plugins
+- Updated dependencies [dc38b18]
+  - @marlonwiss/vue-directives@0.5.2
+
 ## 0.2.11
 
 ### Patch Changes
