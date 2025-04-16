@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.11
+
+### Patch Changes
+
+- 759b61a: Fix Nuxt plugin
+
 ## 0.2.10
 
 ### Patch Changes
