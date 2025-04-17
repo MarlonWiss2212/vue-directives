@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.15
+
+### Patch Changes
+
+- c001ed4: fix directives
+
 ## 0.2.14
 
 ### Patch Changes
