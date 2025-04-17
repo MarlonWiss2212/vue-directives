@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 0.3.1
+
+### Patch Changes
+
+- c926cbe: Update packages
+- Updated dependencies [c926cbe]
+  - @marlonwiss/vue-directives@0.6.1
+
 ## 0.3.0
 
 ### Minor Changes

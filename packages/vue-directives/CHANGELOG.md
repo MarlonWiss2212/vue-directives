@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 0.6.1
+
+### Patch Changes
+
+- c926cbe: Update packages
+
 ## 0.6.0
 
 ### Minor Changes
