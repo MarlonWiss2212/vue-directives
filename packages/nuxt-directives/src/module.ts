@@ -13,5 +13,8 @@ export default defineNuxtModule({
       filename: 'types/directives.d.ts',
       src: resolver.resolve('./runtime/types/directives.d.ts'),
     })
+    nuxt.hook('prepare:types', ({ references }) => {
+      references.push({ path: resolver.resolve(nuxt.options.buildDir, 'types/directives.d.ts') })
+    })
   },
 })
