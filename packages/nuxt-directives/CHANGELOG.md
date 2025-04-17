@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.13
+
+### Patch Changes
+
+- 65fa3e9: Add types
+
 ## 0.2.12
 
 ### Patch Changes
