@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 0.3.2
+
+### Patch Changes
+
+- 1381a94: Update Packages
+- Updated dependencies [1381a94]
+  - @marlonwiss/vue-directives@0.6.2
+
 ## 0.3.1
 
 ### Patch Changes
