@@ -1,7 +1,7 @@
 {
   "name": "@marlonwiss/vue-directives",
   "version": "0.6.0",
-  "description": "This package contains some additional vue directives such as v-focus or v-switch",
+  "description": "A lightweight Vue 3 plugin providing a collection of custom directives to enhance your development experience.",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
   "files": [
@@ -11,10 +11,6 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarlonWiss2212/vue-directives.git"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -28,5 +24,30 @@
   },
   "peerDependencies": {
     "vue": "^3.5.13"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "directives",
+    "vue-directives",
+    "plugin",
+    "vue-plugin",
+    "custom-directives",
+    "vue3-directives",
+    "javascript",
+    "typescript",
+    "frontend",
+    "development"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonWiss2212/vue-directives.git"
+  },
+  "homepage": "https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/vue-directives/Readme.md",
+  "documentation": {
+    "url": "https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/vue-directives/Readme.md"
+  },
+  "bugs": {
+    "url": "https://github.com/MarlonWiss2212/vue-directives/issues"
   }
 }

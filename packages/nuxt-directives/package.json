@@ -1,7 +1,7 @@
 {
   "name": "@marlonwiss/nuxt-directives",
   "version": "0.3.0",
-  "description": "This package contains some additional vue directives such as v-focus or v-switch for Nuxt3",
+  "description": "A Nuxt 3 module that automatically installs a collection of useful Vue 3 directives into your application.",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
   "exports": {
@@ -44,5 +44,26 @@
   "dependencies": {
     "@marlonwiss/vue-directives": "workspace:*",
     "@nuxt/kit": "^3.16.2"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "vue3",
+    "vue",
+    "directives",
+    "nuxt-module",
+    "vue-directives",
+    "plugin",
+    "javascript",
+    "typescript",
+    "frontend",
+    "web-development"
+  ],
+  "homepage": "https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/Readme.md",
+  "documentation": {
+    "url": "https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/Readme.md"
+  },
+  "bugs": {
+    "url": "https://github.com/MarlonWiss2212/nuxt-directives/issues"
   }
 }

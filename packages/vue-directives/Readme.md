@@ -54,6 +54,18 @@ See the full list of available directives [here](./../../Directives.md).
 
 ---
 
+## 📚 Changelog
+
+See the full changelog [here](./Changelog.md).
+
+---
+
+## 📚 Monorepo Documentation
+
+See the documentation of the monorepo [here](./../../Readme.md).
+
+---
+
 ## License
 
 MIT License.

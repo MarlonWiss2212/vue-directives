@@ -2,7 +2,7 @@
 
 A Nuxt 3 module that automatically installs a collection of useful Vue 3 directives into your application.
 
-Powered by [vue-directives](https://github.com/your-repo/vue-directives) and designed for seamless integration with Nuxt.
+Powered by [vue-directives](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/vue-directives/Readme.md) and designed for seamless integration with Nuxt.
 
 ---
 
@@ -46,6 +46,18 @@ That's it! All custom directives are now globally available in your project.
 ## 📚 Usage / Directives Documentation
 
 See the full list of available directives [here](./../../Directives.md).
+
+---
+
+## 📚 Changelog
+
+See the full changelog [here](./Changelog.md).
+
+---
+
+## 📚 Monorepo Documentation
+
+See the documentation of the monorepo [here](./../../Readme.md).
 
 ---
 
