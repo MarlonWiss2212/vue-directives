@@ -88,7 +88,7 @@ pnpm changeset       # Create a new changeset for versioning
 
 ## 📚 Usage / Directives Documentation
 
-See the full list of available directives [here](./../../Directives.md).
+See the full list of available directives [here](Directives.md).
 
 ---
 
