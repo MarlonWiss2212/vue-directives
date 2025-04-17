@@ -9,12 +9,9 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
     addPlugin(resolver.resolve('./runtime/nuxt'))
-    addTypeTemplate({
+    /*addTypeTemplate({
       filename: 'types/directives.d.ts',
       src: resolver.resolve('./runtime/types/directives.d.ts'),
-    })
-    nuxt.hook('prepare:types', ({ references }) => {
-      references.push({ path: resolver.resolve(nuxt.options.buildDir, 'types/directives.d.ts') })
-    })
+    })*/
   },
 })
