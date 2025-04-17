@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.14
+
+### Patch Changes
+
+- d36005b: fix template
+
 ## 0.2.13
 
 ### Patch Changes
