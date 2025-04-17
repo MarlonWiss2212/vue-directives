@@ -14,6 +14,17 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 /
 ├── .changeset/        # Changesets configuration
 ├── .turbo/            # Turborepo cache
+├─ packages/
+│  └── playground/     # Nuxt Playground
+│      ├── .nuxt/
+│      │   └── ...
+│      ├── .node_modules/
+|      |   └── ...
+│      ├── app.vue
+│      ├── nuxt.config.ts      
+│      ├── CHANGELOG.md
+│      ├── package.json
+│      └── tsconfig.json
 ├── node_modules/      # Root dependencies
 ├── packages/
 │   ├── nuxt-directives/
@@ -21,7 +32,7 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 │   │   │   └── runtime/
 │   │   │       │── types/
 |   |   |       │   └── ...
-│   │   │       ├── ...
+│   │   │       └── ...
 │   │   ├── dist/      # Built files
 │   │   ├── CHANGELOG.md
 │   │   ├── package.json

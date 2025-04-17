@@ -4,5 +4,10 @@
     "dist",
     "node_modules",
     "playground"
-  ]
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "./runtime/types"
+    ]
+  }
 }

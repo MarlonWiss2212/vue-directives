@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  },
+  "dependencies": {
+    "@marlonwiss/nuxt-directives": "workspace:*",
+    "nuxt": "^3.16.2"
+  }
+}

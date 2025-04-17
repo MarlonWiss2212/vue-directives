@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "dev": "turbo dev",
     "dev:prepare": "turbo dev:prepare --filter=@marlonwiss/nuxt-directives",
     "publish-packages": "turbo run build && changeset version && changeset publish"
   },

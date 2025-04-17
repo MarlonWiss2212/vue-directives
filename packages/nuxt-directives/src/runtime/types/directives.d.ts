@@ -1,4 +1,4 @@
-/*declare module "#build/directives" {
+declare module "#build/directives" {
   import { vCase, vDefault, vFocus, vSwitch } from "@marlonwiss/vue-directives";
   export const directives: {
     vFocus: typeof vFocus;
@@ -29,4 +29,4 @@ declare module '@vue/runtime-core' {
 }
 
 
-export { }*/
+export { }

@@ -9,6 +9,10 @@
     "dev:prepare": {
       "persistent": true,
       "cache": false
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
     }
   }
 }
