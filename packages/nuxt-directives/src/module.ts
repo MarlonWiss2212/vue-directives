@@ -11,7 +11,7 @@ export default defineNuxtModule({
     addPlugin(resolver.resolve('./runtime/nuxt'))
     addTypeTemplate({
       filename: 'types/directives.d.ts',
-      src: resolver.resolve('./types/nuxt.d.ts'),
+      src: resolver.resolve('./runtime/types/nuxt.d.ts'),
     })
   },
 })
