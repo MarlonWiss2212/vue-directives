@@ -6,12 +6,15 @@ export default defineNuxtModule({
     configKey: 'marlonwissNuxtDirectives',
   },
   defaults: {},
-  setup() {
+  setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
     addPlugin(resolver.resolve('./runtime/nuxt'))
     addTypeTemplate({
       filename: 'types/directives.d.ts',
-      src: resolver.resolve('./runtime/types/nuxt.d.ts'),
+      src: resolver.resolve('./runtime/types/directives.d.ts'),
     })
+    nuxt.options.typescript.tsConfig ||= {}
+    nuxt.options.typescript.tsConfig.include ||= []
+    nuxt.options.typescript.tsConfig.include.push('./types/**/*.d.ts')
   },
 })
