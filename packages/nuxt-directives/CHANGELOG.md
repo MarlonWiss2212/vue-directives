@@ -1,5 +1,16 @@
 # @marlonwiss/nuxt-directives
 
+## 0.3.0
+
+### Minor Changes
+
+- bd88d9d: Add Unfocus Hook
+
+### Patch Changes
+
+- Updated dependencies [bd88d9d]
+  - @marlonwiss/vue-directives@0.6.0
+
 ## 0.2.20
 
 ### Patch Changes

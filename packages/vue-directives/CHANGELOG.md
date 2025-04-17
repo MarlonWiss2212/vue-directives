@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 0.6.0
+
+### Minor Changes
+
+- bd88d9d: Add Unfocus Hook
+
 ## 0.5.2
 
 ### Patch Changes
