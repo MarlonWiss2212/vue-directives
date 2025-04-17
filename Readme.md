@@ -46,26 +46,26 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 <details>
 <summary><strong>Packages</strong></summary>
 
-### [`@marlonwiss/vue-directives`](packages/vue-directives/README.md)
+### [`@marlonwiss/vue-directives`](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/vue-directives/Readme.md)
 
 This package provides a collection of Vue 3 custom directives
 
-**Changelog**: [View CHANGELOG.md](packages/vue-directives/CHANGELOG.md)
+**Changelog**: [View CHANGELOG.md](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/vue-directives/CHANGELOG.md)
 
-**Directives**: [View Directives.md](./Directives.md)
+**Directives**: [View Directives.md](https://github.com/MarlonWiss2212/vue-directives/blob/main/Directives.md)
 
 ---
 
-### [`@marlonwiss/nuxt-directives`](packages/nuxt-directives/README.md)
+### [`@marlonwiss/nuxt-directives`](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/Readme.md)
 
 This package wraps the `vue-directives` into a Nuxt 3 module:
 
 - Registers the Vue directives automatically in your Nuxt application.
 - Offers type definitions and runtime auto-imports for better developer experience.
 
-**Changelog**: [View CHANGELOG.md](packages/nuxt-directives/CHANGELOG.md)
+**Changelog**: [View CHANGELOG.md](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/CHANGELOG.md)
 
-**Directives**: [View Directives.md](./Directives.md)
+**Directives**: [View Directives.md](https://github.com/MarlonWiss2212/vue-directives/blob/main/Directives.md)
 </details>
 
 <details>
@@ -88,7 +88,7 @@ pnpm changeset       # Create a new changeset for versioning
 
 ## 📚 Usage / Directives Documentation
 
-See the full list of available directives [here](Directives.md).
+See the full list of available directives [here](https://github.com/MarlonWiss2212/vue-directives/blob/main/Directives.md).
 
 ---
 

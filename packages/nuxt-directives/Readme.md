@@ -45,19 +45,19 @@ That's it! All custom directives are now globally available in your project.
 
 ## 📚 Usage / Directives Documentation
 
-See the full list of available directives [here](./../../Directives.md).
+See the full list of available directives [here](https://github.com/MarlonWiss2212/vue-directives/blob/main/Directives.md).
 
 ---
 
 ## 📚 Changelog
 
-See the full changelog [here](./Changelog.md).
+See the full changelog [here](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/CHANGELOG.md).
 
 ---
 
 ## 📚 Monorepo Documentation
 
-See the documentation of the monorepo [here](./../../Readme.md).
+See the documentation of the monorepo [here](https://github.com/MarlonWiss2212/vue-directives/blob/main/Readme.md).
 
 ---
 
