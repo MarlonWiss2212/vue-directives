@@ -44,7 +44,7 @@ app.use(marlonWissVueDirectivesPlugin)
 app.mount('#app')
 ```
 
-> **Note:** Only use this method for **Vue** projects. For **Nuxt 3**, use [`@marlonwiss/nuxt-directives`](https://github.com/your-repo/nuxt-directives) instead.
+> **Note:** Only use this method for **Vue** projects. For **Nuxt 3**, use [`@marlonwiss/nuxt-directives`](https://github.com/MarlonWiss2212/vue-directives/blob/main/packages/nuxt-directives/Readme.md) instead.
 
 ---
 
