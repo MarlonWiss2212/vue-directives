@@ -1,6 +1,6 @@
 {
   "name": "@marlonwiss/nuxt-directives",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "description": "This package contains some additional vue directives such as v-focus or v-switch for Nuxt3",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
