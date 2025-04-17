@@ -68,5 +68,5 @@ See the documentation of the monorepo [here](https://github.com/MarlonWiss2212/v
 
 ## License
 
-MIT License.
+[MIT License.](https://github.com/MarlonWiss2212/vue-directives/blob/main/LICENSE)
 
