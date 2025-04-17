@@ -1,4 +1,4 @@
-# Monorepo – Vue & Nuxt Directives
+# Monorepo – MarlonWiss Vue & Nuxt Directives
 
 This monorepo contains two related but different packages:
 
@@ -46,21 +46,17 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 <details>
 <summary><strong>Packages</strong></summary>
 
-### [`vue-directives`](packages/vue-directives/CHANGELOG.md)
+### [`@marlonwiss/vue-directives`](packages/vue-directives/README.md)
 
-This package provides a collection of Vue 3 custom directives:
-
-- **`vFocus`**: Automatically focuses the bound element when it is inserted into the DOM.
-- **`vUnFocus`**: Programmatically removes focus from the bound element when triggered.
-- **`vSwitch`**: Provides switch-case-like conditional rendering in templates.
-  - **`vCase`**: Works with `vSwitch` to render content if the case matches.
-  - **`vDefault`**: Works with `vSwitch` to render fallback content if no cases match.
+This package provides a collection of Vue 3 custom directives
 
 **Changelog**: [View CHANGELOG.md](packages/vue-directives/CHANGELOG.md)
 
+**Directives**: [View Directives.md](./Directives.md)
+
 ---
 
-### [`nuxt-directives`](packages/nuxt-directives/CHANGELOG.md)
+### [`@marlonwiss/nuxt-directives`](packages/nuxt-directives/README.md)
 
 This package wraps the `vue-directives` into a Nuxt 3 module:
 
@@ -69,6 +65,7 @@ This package wraps the `vue-directives` into a Nuxt 3 module:
 
 **Changelog**: [View CHANGELOG.md](packages/nuxt-directives/CHANGELOG.md)
 
+**Directives**: [View Directives.md](./Directives.md)
 </details>
 
 <details>
@@ -86,6 +83,16 @@ pnpm changeset       # Create a new changeset for versioning
 ```
 
 </details>
+
+---
+
+## 📚 Usage / Directives Documentation
+
+See the full list of available directives [here](./../../Directives.md).
+
+---
+
+## License
 
 MIT License.
 
