@@ -1,6 +1,10 @@
 # Monorepo – Vue & Nuxt Directives
 
-This monorepo contains custom Vue 3 directives and a Nuxt 3 module that integrates them.  
+This monorepo contains two related but different packages:
+
+- **`@marlonwiss/vue-directives`**: A standalone set of Vue 3 custom directives you can use in any Vue application.
+- **`@marlonwiss/nuxt-directives`**: A Nuxt 3 module that automatically installs and configures `@marlonwiss/vue-directives` for you.
+
 It is managed using [Turborepo](https://turbo.build/repo) for efficient workflows, and [Changesets](https://github.com/changesets/changesets) for versioning and changelog management.
 
 <details>
@@ -18,7 +22,7 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 │   │   │       │── types/
 |   |   |       │   └── ...
 │   │   │       ├── ...
-│   │   ├── dist/     # Built files
+│   │   ├── dist/      # Built files
 │   │   ├── CHANGELOG.md
 │   │   ├── package.json
 │   │   └── tsconfig.json
@@ -30,7 +34,7 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 │       │   │   └── ...
 │       │   └── utils/
 │       │       └── ...
-│       ├── dist/     # Built files
+│       ├── dist/      # Built files
 │       ├── CHANGELOG.md
 │       ├── package.json
 │       └── tsconfig.json
@@ -46,9 +50,11 @@ It is managed using [Turborepo](https://turbo.build/repo) for efficient workflow
 
 This package provides a collection of Vue 3 custom directives:
 
-- **`vFocus`** – Automatically focus an element when mounted.
-- **`vUnFocus`** – Automatically remove focus from an element.
-- **`vSwitch`**, **`vCase`**, and **`vDefault`** – Implement switch-case-like template logic in Vue.
+- **`vFocus`**: Automatically focuses the bound element when it is inserted into the DOM.
+- **`vUnFocus`**: Programmatically removes focus from the bound element when triggered.
+- **`vSwitch`**: Provides switch-case-like conditional rendering in templates.
+  - **`vCase`**: Works with `vSwitch` to render content if the case matches.
+  - **`vDefault`**: Works with `vSwitch` to render fallback content if no cases match.
 
 **Changelog**: [View CHANGELOG.md](packages/vue-directives/CHANGELOG.md)
 
@@ -56,10 +62,10 @@ This package provides a collection of Vue 3 custom directives:
 
 ### [`nuxt-directives`](packages/nuxt-directives/CHANGELOG.md)
 
-This package wraps the `vue-directives` into a Nuxt 3 module, making the directives available automatically across your Nuxt app.
+This package wraps the `vue-directives` into a Nuxt 3 module:
 
-- Registers the Vue directives as a Nuxt module.
-- Provides TypeScript definitions for better DX.
+- Registers the Vue directives automatically in your Nuxt application.
+- Offers type definitions and runtime auto-imports for better developer experience.
 
 **Changelog**: [View CHANGELOG.md](packages/nuxt-directives/CHANGELOG.md)
 
@@ -82,3 +88,4 @@ pnpm changeset       # Create a new changeset for versioning
 </details>
 
 MIT License.
+
