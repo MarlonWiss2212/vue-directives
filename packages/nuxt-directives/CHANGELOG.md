@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.19
+
+### Patch Changes
+
+- 40eb05e: fix
+
 ## 0.2.18
 
 ### Patch Changes
