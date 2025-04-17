@@ -13,8 +13,5 @@ export default defineNuxtModule({
       filename: 'types/directives.d.ts',
       src: resolver.resolve('./runtime/types/directives.d.ts'),
     })
-    nuxt.options.typescript.tsConfig ||= {}
-    nuxt.options.typescript.tsConfig.include ||= []
-    nuxt.options.typescript.tsConfig.include.push('./types/**/*.d.ts')
   },
 })
