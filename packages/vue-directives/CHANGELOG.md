@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 0.6.3
+
+### Patch Changes
+
+- 29e2ae1: Add License
+
 ## 0.6.2
 
 ### Patch Changes

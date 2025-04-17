@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 0.3.3
+
+### Patch Changes
+
+- 29e2ae1: Add License
+- Updated dependencies [29e2ae1]
+  - @marlonwiss/vue-directives@0.6.3
+
 ## 0.3.2
 
 ### Patch Changes
