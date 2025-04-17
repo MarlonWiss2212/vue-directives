@@ -1,5 +1,11 @@
 # @marlonwiss/nuxt-directives
 
+## 0.2.20
+
+### Patch Changes
+
+- ebca295: Fix package.json
+
 ## 0.2.19
 
 ### Patch Changes
