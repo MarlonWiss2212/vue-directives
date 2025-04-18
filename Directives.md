@@ -22,6 +22,16 @@ Removes focus from an element programmatically.
 </template>
 ```
 
+### `vCopy`
+Copies the innerText of the element
+
+**Example:**
+```vue
+<template>
+  <input v-copy />
+</template>
+```
+
 ### `vSwitch`, `vCase`, `vDefault`
 Implements a clean, declarative switch-case-default control flow inside templates.
 
