@@ -23,7 +23,7 @@ Removes focus from an element programmatically.
 ```
 
 ### `vCopy`
-Copies the innerText of the element
+Copies the innerText of the element when clicking on it after its rendered.
 
 **Example:**
 ```vue
