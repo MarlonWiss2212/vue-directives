@@ -5,11 +5,11 @@ async function copyListener(value: string) {
 }
 
 export const vCopy: Directive<HTMLElement> = {
-  mounted(el, binding) {
+  mounted(el) {
     el.addEventListener('click', () => copyListener(el.innerText));
 
   },
-  unmounted(el, binding) {
+  unmounted(el) {
     el.removeEventListener('click',() => copyListener(el.innerText));
   }
 }
