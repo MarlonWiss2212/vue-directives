@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.1
+
+### Patch Changes
+
+- 867708c: test
+
 ## 1.0.0
 
 ### Major Changes
