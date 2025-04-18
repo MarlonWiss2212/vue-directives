@@ -4,7 +4,7 @@ async function copyListener(value: string) {
   const res = await navigator.clipboard.writeText(value)
 }
 
-export const vCopy: Directive<HTMLElement, string> = {
+export const vCopy: Directive<HTMLElement> = {
   mounted(el) {
     el.style.cursor = 'pointer';
     el.addEventListener('click', () => copyListener(el.innerText));
