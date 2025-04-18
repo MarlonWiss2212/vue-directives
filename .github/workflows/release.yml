@@ -38,6 +38,7 @@ jobs:
           version: pnpm run version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Changeset
         uses: changesets/action@v1
@@ -45,3 +46,4 @@ jobs:
           version: pnpm run version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
