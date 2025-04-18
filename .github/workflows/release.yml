@@ -11,6 +11,12 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      packages: write
+      pull-requests: write
+      issues: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,7 +25,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -27,7 +32,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Publish Packages
-        run: pnpm run publish-packages
+      - name: Prepare Nuxt
+        run: pnpm run dev:prepare
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Publish Changeset
+        uses: changesets/action@v1
+        with:
+          publish: pnpm run publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
