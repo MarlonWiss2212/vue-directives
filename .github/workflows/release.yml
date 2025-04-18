@@ -26,7 +26,22 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Publish Packages
-        run: pnpm run publish-packages
+      - name: Prepare Nuxt
+        run: pnpm run dev:prepare
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Version Changeset
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish Changeset
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
