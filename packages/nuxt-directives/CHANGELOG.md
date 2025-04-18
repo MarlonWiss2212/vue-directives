@@ -1,5 +1,23 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.2
+
+### Patch Changes
+
+- 6e58ff9: Fix pipeline
+- Updated dependencies [6e58ff9]
+  - @marlonwiss/vue-directives@1.0.2
+
+## 1.0.1
+
+### Patch Changes
+
+- edb6914: Fix pipeline
+- 5582eb4: test
+- Updated dependencies [edb6914]
+- Updated dependencies [5582eb4]
+  - @marlonwiss/vue-directives@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

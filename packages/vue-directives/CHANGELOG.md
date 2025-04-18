@@ -1,5 +1,18 @@
 # @marlonwiss/vue-directives
 
+## 1.0.2
+
+### Patch Changes
+
+- 6e58ff9: Fix pipeline
+
+## 1.0.1
+
+### Patch Changes
+
+- edb6914: Fix pipeline
+- 5582eb4: test
+
 ## 1.0.0
 
 ### Major Changes
