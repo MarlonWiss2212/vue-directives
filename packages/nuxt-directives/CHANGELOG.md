@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.1
+
+### Patch Changes
+
+- 867708c: test
+- Updated dependencies [867708c]
+  - @marlonwiss/vue-directives@1.0.1
+
 ## 1.0.0
 
 ### Major Changes
