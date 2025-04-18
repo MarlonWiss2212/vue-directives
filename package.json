@@ -17,7 +17,7 @@
     "dev": "turbo dev",
     "dev:prepare": "turbo dev:prepare --filter=@marlonwiss/nuxt-directives",
     "prepare-release": "changeset",
-    "publish-packages": "turbo run build && changeset version && changeset publish"
+    "publish-packages": "pnpm run prepare && turbo run build && changeset version && changeset publish"
   },
   "packageManager": "pnpm@10.7.0",
   "dependencies": {
