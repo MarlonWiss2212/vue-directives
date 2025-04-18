@@ -1,5 +1,16 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.0
+
+### Major Changes
+
+- fd78dfb: Implementation of vCopy and bug fixing of other directives
+
+### Patch Changes
+
+- Updated dependencies [fd78dfb]
+  - @marlonwiss/vue-directives@1.0.0
+
 ## 0.3.3
 
 ### Patch Changes

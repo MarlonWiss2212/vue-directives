@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.0
+
+### Major Changes
+
+- fd78dfb: Implementation of vCopy and bug fixing of other directives
+
 ## 0.6.3
 
 ### Patch Changes
