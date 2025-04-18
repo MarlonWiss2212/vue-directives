@@ -1,16 +1,15 @@
 import { Directive } from "vue";
 
 async function copyListener(value: string) {
-  const res = await navigator.clipboard.writeText(value)
+  await navigator.clipboard.writeText(value)
 }
 
 export const vCopy: Directive<HTMLElement> = {
-  mounted(el) {
-    el.style.cursor = 'pointer';
+  mounted(el, binding) {
     el.addEventListener('click', () => copyListener(el.innerText));
 
   },
-  unmounted(el) {
+  unmounted(el, binding) {
     el.removeEventListener('click',() => copyListener(el.innerText));
   }
 }
