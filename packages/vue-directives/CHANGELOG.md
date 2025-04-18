@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.5
+
+### Patch Changes
+
+- 571a9af: Remove auto cusor pointer from vCopy
+
 ## 1.0.4
 
 ### Patch Changes
