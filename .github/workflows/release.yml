@@ -1,11 +1,10 @@
 name: Release
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
+
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
