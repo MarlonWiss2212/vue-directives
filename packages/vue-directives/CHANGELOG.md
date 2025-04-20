@@ -1,5 +1,12 @@
 # @marlonwiss/vue-directives
 
+## 1.0.6
+
+### Patch Changes
+
+- c12b303: - Change vUnFocus to vBlur
+  - Update docs
+
 ## 1.0.5
 
 ### Patch Changes
