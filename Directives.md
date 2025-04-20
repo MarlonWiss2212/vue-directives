@@ -2,7 +2,7 @@
 
 ---
 
-### `vFocus`
+### `v-focus`
 Automatically focuses the bound element when it is mounted.
 
 **Example:**
@@ -12,17 +12,17 @@ Automatically focuses the bound element when it is mounted.
 </template>
 ```
 
-### `vUnFocus`
+### `v-blur`
 Removes focus from an element programmatically.
 
 **Example:**
 ```vue
 <template>
-  <input v-un-focus />
+  <input v-blur />
 </template>
 ```
 
-### `vCopy`
+### `v-copy`
 Copies the innerText of the element when clicking on it after its rendered.
 
 **Example:**
@@ -32,7 +32,7 @@ Copies the innerText of the element when clicking on it after its rendered.
 </template>
 ```
 
-### `vSwitch`, `vCase`, `vDefault`
+### `v-switch`, `v-case`, `v-default`
 Implements a clean, declarative switch-case-default control flow inside templates.
 
 **Example:**
