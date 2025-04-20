@@ -104,5 +104,4 @@ See the full list of available directives [here](https://github.com/MarlonWiss22
 ---
 
 ## License
-
-[MIT License.](https://github.com/MarlonWiss2212/vue-directives/blob/main/LICENSE)
+[MIT License](https://github.com/MarlonWiss2212/vue-directives/blob/main/LICENSE)
