@@ -3,4 +3,5 @@
 "@marlonwiss/vue-directives": patch
 ---
 
-Change vUnFocus to vBlur
+- Change vUnFocus to vBlur
+- Update docs
