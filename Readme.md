@@ -94,7 +94,8 @@ pnpm run build           # Build all packages
 pnpm run dev             # Start Playground (Run install, dev:prepare and build before)
 
 # When creating pull request for stage into main run
-pnpm run prepare-release # Create a new changeset for versioning and version it
+pnpm run add-release     # Create a new changeset
+pnpm run version-release # Versioning of the changesets
 ```
 </details>
 
