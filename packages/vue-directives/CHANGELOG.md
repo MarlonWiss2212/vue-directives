@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.7
+
+### Patch Changes
+
+- dd56c8e: Update Readme
+
 ## 1.0.6
 
 ### Patch Changes
