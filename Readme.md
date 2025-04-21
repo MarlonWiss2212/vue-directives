@@ -84,15 +84,18 @@ This package wraps the `vue-directives` into a Nuxt 3 module:
 
 This project uses **Turborepo** to orchestrate tasks across packages.
 
+When creating new **feature** create a new feature/* branch. When ready to merge create a pull request to **stage** for that feature.
+
 Common commands:
-
 ```bash
-pnpm install         # Install dependencies
-pnpm dev:prepare     # Prepare Nuxt
-pnpm build           # Build all packages
-pnpm changeset       # Create a new changeset for versioning
-```
+pnpm install             # Install dependencies
+pnpm run dev:prepare     # Prepare Nuxt
+pnpm run build           # Build all packages
+pnpm run dev             # Start Playground (Run install, dev:prepare and build before)
 
+# When creating pull request for stage into main run
+pnpm run prepare-release # Create a new changeset for versioning and version it
+```
 </details>
 
 ---
