@@ -84,7 +84,8 @@ This package wraps the `vue-directives` into a Nuxt 3 module:
 
 This project uses **Turborepo** to orchestrate tasks across packages.
 
-When creating new **feature** create a new feature/* branch. When ready to merge create a pull request to **stage** for that feature.
+Git Flow:
+<img src="./public/gitflow.svg">
 
 Common commands:
 ```bash
