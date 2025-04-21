@@ -1,6 +1,8 @@
 <template>
   <div class="top-div">
-    <p v-copy>Copy this text by clicking on it</p>
+    <p v-copy>
+      Copy this text by clicking on it
+    </p>
     <button v-focus>Focuses automatically</button>
   </div>
 </template>
