@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.8
+
+### Patch Changes
+
+- d5c32e4: Update package.json
+
 ## 1.0.7
 
 ### Patch Changes

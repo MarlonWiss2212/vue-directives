@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.8
+
+### Patch Changes
+
+- edcdf2c: Update Docs
+- Updated dependencies [d5c32e4]
+  - @marlonwiss/vue-directives@1.0.8
+
 ## 1.0.7
 
 ### Patch Changes
