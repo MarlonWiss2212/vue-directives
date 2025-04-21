@@ -97,6 +97,9 @@ pnpm run dev             # Start Playground (Run install, dev:prepare and build 
 # When creating pull request for stage into main run
 pnpm run add-changes     # Create a new changeset
 pnpm run version-changes # Versioning of the changesets
+
+pnpm run taze:minor      # See minor available package updates
+pnpm run taze:major      # See major available package updates
 ```
 </details>
 
