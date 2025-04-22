@@ -99,6 +99,7 @@ pnpm run dev:prepare     # Prepare Nuxt
 pnpm run build           # Build all packages
 pnpm run dev             # Start Playground (Run install, dev:prepare and build before)
 
+# When creating pull request for stage into main run
 pnpm run taze:minor      # See minor available package updates
 pnpm run taze:major      # See major available package updates
 
