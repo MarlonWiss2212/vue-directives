@@ -20,6 +20,8 @@ jobs:
       pull-requests: write
       issues: read
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Run build workflow
         uses: ./.github/workflows/build.yml
 
