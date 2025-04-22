@@ -1,5 +1,12 @@
 # @marlonwiss/vue-directives
 
+## 1.0.9
+
+### Patch Changes
+
+- 5f2193f: test
+- 9329d62: Update packages and install taze for updating packages with updated docs
+
 ## 1.0.8
 
 ### Patch Changes
