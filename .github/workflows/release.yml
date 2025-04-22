@@ -1,11 +1,9 @@
 name: Release
 
 on:
-  pull_request:
+  push:
     branches:
-      - stage
-      - dev
-      - feature/**
+      - main
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -22,8 +20,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Run build workflow
-        uses: ./.github/workflows/build.yml
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Prepare Nuxt
+        run: pnpm run dev:prepare
+
+      - name: Build
+        run: pnpm run build
 
       - name: Publish Changeset
         uses: changesets/action@v1
