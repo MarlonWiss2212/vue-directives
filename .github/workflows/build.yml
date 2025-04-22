@@ -5,7 +5,9 @@ on:
     branches:
       - stage
       - dev
+      - hotfix
       - feature/**
+      - fix/**
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
