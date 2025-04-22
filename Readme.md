@@ -80,13 +80,19 @@ This package wraps the `vue-directives` into a Nuxt 3 module:
 </details>
 
 <details>
-<summary><strong>Development</strong></summary>
+<summary><strong>Development / Contribute</strong></summary>
 
-This project uses **Turborepo** to orchestrate tasks across packages.
+### Contribute to this project by creating a Fork of this Repository
+First of you will create a fork of this Repo. After that you might either want to implement a new **feature**, **bugfix** or a new **hotfix**
+- for new features please create a feature/** branch. After implementation create a PR into dev branch for your new feature
+- for new bugfixes please create a fix/** branch. After implementation create a PR into dev branch for your bugfix
+- for hotfixes please use the hotfix branch. After implementation create a PR into main branch for your new hotfix
 
-When creating new **feature** create a new feature/* branch. When ready to merge create a pull request to **stage** for that feature.
 
-Common commands:
+### Git Flow:
+<img src="./public/gitflow.svg">
+
+### Common commands:
 ```bash
 pnpm install             # Install dependencies
 pnpm run dev:prepare     # Prepare Nuxt
@@ -94,8 +100,14 @@ pnpm run build           # Build all packages
 pnpm run dev             # Start Playground (Run install, dev:prepare and build before)
 
 # When creating pull request for stage into main run
-pnpm run add-release     # Create a new changeset
-pnpm run version-release # Versioning of the changesets
+pnpm run taze:minor      # See minor available package updates
+pnpm run taze:major      # See major available package updates
+
+# When making changes add it to changeset using following command for the changelog and versioning
+pnpm run add-changes     # Create a new changeset
+
+# for a new release run this command locally. Never in a feature, fix or the dev branch
+pnpm run version-changes # Versioning of the changesets
 ```
 </details>
 
