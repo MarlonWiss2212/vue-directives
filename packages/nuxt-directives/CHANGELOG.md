@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.10
+
+### Patch Changes
+
+- 38f9aaf: update readme
+- Updated dependencies [38f9aaf]
+  - @marlonwiss/vue-directives@1.0.10
+
 ## 1.0.9
 
 ### Patch Changes
