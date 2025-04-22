@@ -2,11 +2,6 @@ name: Build
 
 on:
   workflow_call: {}
-  pull_request:
-    branches:
-      - stage
-      - dev
-      - feature/**
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
