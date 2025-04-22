@@ -1,7 +1,7 @@
 name: Version
 
 on:
-  push:
+  pull_request:
     branches:
       - stage
       - dev
