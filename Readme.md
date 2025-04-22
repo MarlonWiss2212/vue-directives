@@ -95,15 +95,6 @@ First of you will create a fork of this Repo. After that you might either want t
 ### Git Flow:
 <img src="./public/gitflow.svg">
 
-#### Pull Request Merging Strategy
-- Squash merging for (this is set as github rule):
-    - feature/** -> dev
-    - fix/** -> dev
-- Merge commits for (cannot be set github rule):
-    - stage -> main
-    - hotfix -> main
-    - dev -> stage
-
 ### Common commands:
 ```bash
 pnpm install             # Install dependencies
