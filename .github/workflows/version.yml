@@ -1,0 +1,48 @@
+name: Version
+
+on:
+  push:
+    branches:
+      - stage
+      - dev
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  version:
+    name: Version
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      packages: write
+      pull-requests: write
+      issues: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Prepare Nuxt
+        run: pnpm run dev:prepare
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Publish Changeset
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version-changes
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
