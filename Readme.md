@@ -84,13 +84,25 @@ This package wraps the `vue-directives` into a Nuxt 3 module:
 
 ### Contribute to this project by creating a Fork of this Repository
 First of you will create a fork of this Repo. After that you might either want to implement a new **feature**, **bugfix** or a new **hotfix**
-- for new features please create a feature/** branch. After implementation create a PR into dev branch for your new feature
-- for new bugfixes please create a fix/** branch. After implementation create a PR into dev branch for your bugfix
-- for hotfixes please use the hotfix branch. After implementation create a PR into main branch for your new hotfix
+- for new features please create a feature/** branch.
+  - After implementation create a PR into dev branch for your new feature
+- for new bugfixes please create a fix/** branch. 
+  - After implementation create a PR into dev branch for your bugfix 
+- for hotfixes please use the hotfix branch. 
+  - After implementation create a PR into main branch for your new hotfix
 
 
 ### Git Flow:
 <img src="./public/gitflow.svg">
+
+#### Pull Request Merging Strategy
+- Squash merging for (this is set as github rule):
+    - feature/** -> dev
+    - fix/** -> dev
+- Merge commits for (cannot be set github rule):
+    - stage -> main
+    - hotfix -> main
+    - dev -> stage
 
 ### Common commands:
 ```bash
