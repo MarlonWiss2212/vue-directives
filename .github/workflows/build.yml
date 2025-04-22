@@ -1,6 +1,7 @@
-name: Version
+name: Build
 
 on:
+  workflow_call: {}
   pull_request:
     branches:
       - stage
@@ -10,15 +11,9 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  version:
-    name: Version
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
-      packages: write
-      pull-requests: write
-      issues: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
