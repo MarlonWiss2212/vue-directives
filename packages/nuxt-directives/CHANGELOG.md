@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.9
+
+### Patch Changes
+
+- 9329d62: Update packages and install taze for updating packages with updated docs
+- Updated dependencies [9329d62]
+  - @marlonwiss/vue-directives@1.0.9
+
 ## 1.0.8
 
 ### Patch Changes
