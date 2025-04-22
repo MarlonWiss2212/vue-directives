@@ -5,6 +5,7 @@ on:
     branches:
       - stage
       - dev
+      - feature/**
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -38,15 +39,3 @@ jobs:
 
       - name: Build
         run: pnpm run build
-
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout origin/dev
-
-      - name: Version Changeset
-        run: pnpm run version-changes
-
-      - name: Push changes
-        run: git push origin HEAD
