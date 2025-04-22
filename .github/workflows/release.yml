@@ -13,7 +13,6 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    needs: build   # <-- depends on the build job
     permissions:
       id-token: write
       contents: write
