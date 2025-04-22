@@ -4,10 +4,11 @@
 
 ### Patch Changes
 
-- 5f2193f: test
-- 9329d62: Update packages and install taze for updating packages with updated docs
-- Updated dependencies [5f2193f]
-- Updated dependencies [9329d62]
+
+- c974ec7: test
+- c974ec7: Update packages and install taze for updating packages with updated docs
+- Updated dependencies [c974ec7]
+- Updated dependencies [c974ec7]
   - @marlonwiss/vue-directives@1.0.9
 
 ## 1.0.8

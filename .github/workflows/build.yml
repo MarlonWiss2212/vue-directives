@@ -1,7 +1,15 @@
-name: Build
+name: Version
 
 on:
-  workflow_call: {}
+  pull_request:
+    branches:
+      - stage
+      - dev
+      - hotfix
+      - feature/**
+      - fix/**
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
