@@ -18,11 +18,14 @@
     "dev": "turbo dev",
     "add-changes": "changeset",
     "version-changes": "changeset version",
-    "publish-changes": "changeset publish"
+    "publish-changes": "changeset publish",
+    "taze:minor": "taze minor -wIr",
+    "taze:major": "taze major -wIr"
   },
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.9.0",
   "dependencies": {
-    "@changesets/cli": "^2.29.1",
+    "@changesets/cli": "^2.29.2",
+    "taze": "^19.0.4",
     "turbo": "^2.5.0"
   }
 }
