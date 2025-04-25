@@ -1,6 +1,6 @@
 {
   "name": "@marlonwiss/vue-directives",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A lightweight Vue 3 plugin providing a collection of custom directives to enhance your development experience.",
   "author": "Marlon Wisskirchen",
   "license": "MIT",

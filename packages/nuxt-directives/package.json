@@ -1,6 +1,6 @@
 {
   "name": "@marlonwiss/nuxt-directives",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A Nuxt 3 module that automatically installs a collection of useful Vue 3 directives into your application.",
   "author": "Marlon Wisskirchen",
   "license": "MIT",
