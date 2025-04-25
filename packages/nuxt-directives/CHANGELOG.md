@@ -1,5 +1,13 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.11
+
+### Patch Changes
+
+- 0c6558d: Update pipelines
+- Updated dependencies [0c6558d]
+  - @marlonwiss/vue-directives@1.0.11
+
 ## 1.0.10
 
 ### Patch Changes
