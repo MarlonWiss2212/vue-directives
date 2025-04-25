@@ -1,5 +1,12 @@
 # @marlonwiss/nuxt-directives
 
+## 1.0.13
+
+### Patch Changes
+
+- 228d046: fix build
+- Updated dependencies [228d046]
+  - @marlonwiss/vue-directives@1.0.13
 
 ## 1.0.12
 

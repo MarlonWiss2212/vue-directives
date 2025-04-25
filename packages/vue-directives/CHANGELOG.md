@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.13
+
+### Patch Changes
+
+- 228d046: fix build
+
 ## 1.0.12
 
 ### Patch Changes
