@@ -1,5 +1,11 @@
 # @marlonwiss/vue-directives
 
+## 1.0.11
+
+### Patch Changes
+
+- 0c6558d: Update pipelines
+
 ## 1.0.10
 
 ### Patch Changes
