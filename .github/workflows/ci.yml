@@ -6,8 +6,8 @@ on:
       - stage
       - dev
       - hotfix
-      - feature/**
-      - fix/**
+      - 'feature/**'
+      - 'fix/**'
   push:
     branches:
       - main
