@@ -87,11 +87,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-files
-          path: |
-            apps/**/dist/
-            apps/**/.output/
-            packages/**/dist/
-            packages/**/.output/
+          path: .
 
       - name: Publish Changeset
         uses: changesets/action@v1
