@@ -1,5 +1,6 @@
 # @marlonwiss/nuxt-directives
 
+
 ## 1.0.12
 
 ### Patch Changes
